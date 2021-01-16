@@ -199,7 +199,7 @@ ncat -lvvp 7777
 ncat -lvvp 8888
 ```
 
-![532548-20191215104646111-1137243959](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/532548-20191215104646111-1137243959.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/532548-20191215104646111-1137243959.png)
 
 bash进程的输入输出都来自其他进程的pipe
 

