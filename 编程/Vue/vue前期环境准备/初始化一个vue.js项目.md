@@ -99,5 +99,5 @@ linlsec@linlsecdeMacBook-Pro VueDemo % cnpm run dev # 运行项目
 
 **打开http://localhost:8080就是vue默认的模板**
 
-![WX20210117-175104@2x](/Users/linlsec/Desktop/linlsec.github.io/images/编程/WX20210117-175104@2x.png)
+![img](https://github.com/linl-sec/linlsec.github.io/blob/main/images/%E7%BC%96%E7%A8%8B/WX20210117-175104%402x.png)
 
