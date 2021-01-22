@@ -125,6 +125,9 @@ linlsec.github.io
 ├── Web安全
 │   ├── 工具
 │   └── 知识库
+│       ├── SQL注入资料库
+│       │   ├── MSSQL注入.md
+│       │   └── Mysql注入.md
 │       ├── getshell资料库
 │       │   ├── Linux反弹备忘录.md
 │       │   └── Windows反弹备忘录.md
@@ -3116,6 +3119,8 @@ linlsec.github.io
 │   │   ├── 1598437160.png
 │   │   ├── 1734768-2c2296daae714cb0.webp
 │   │   ├── 532548-20191215104646111-1137243959.png
+│   │   ├── mysql_sql-1.jpg
+│   │   ├── mysql_sql-2.jpg
 │   │   ├── t01059c412e75c4ff00.png
 │   │   ├── t0110d78f8b6dc573b7.png
 │   │   ├── t01121eca1107d335a1.png
