@@ -127,7 +127,8 @@ linlsec.github.io
 │   └── 知识库
 │       ├── SQL注入资料库
 │       │   ├── MSSQL注入.md
-│       │   └── Mysql注入.md
+│       │   ├── Mysql注入.md
+│       │   └── SQL注入备忘录.md
 │       ├── getshell资料库
 │       │   ├── Linux反弹备忘录.md
 │       │   └── Windows反弹备忘录.md
@@ -3121,6 +3122,7 @@ linlsec.github.io
 │   │   ├── 532548-20191215104646111-1137243959.png
 │   │   ├── mysql_sql-1.jpg
 │   │   ├── mysql_sql-2.jpg
+│   │   ├── sql-1.png
 │   │   ├── t01059c412e75c4ff00.png
 │   │   ├── t0110d78f8b6dc573b7.png
 │   │   ├── t01121eca1107d335a1.png
